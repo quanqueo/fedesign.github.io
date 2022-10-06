@@ -1,0 +1,161 @@
+@--light-dark: #233142;
+@--smoke-gray: #5c5c5c;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #f1f1f1 !important;
+}
+
+#content {
+  //background-image: url(../images/hinhanhITC/hinhanhcachoatdongITC/IMG_0690.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  padding-bottom: 3rem;
+}
+
+#content > .container {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+#content .super-title {
+  width: 100%;
+  text-align: center;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  background: transparent;
+  font-weight: bold;
+  color: #710202;
+  font-size: 25px;
+  padding-bottom: -13px;
+  margin-bottom: 6px;
+  font-family: revert;
+  font-style: oblique;
+}
+
+.super-title a:hover {
+  text-decoration: none;
+}
+
+.activities-lists-item {
+  background: rgb(244, 253, 255);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  box-shadow: 0px 0px 10px rgb(226, 241, 245);
+  border-radius: 10px;
+  // height: 1.75rem;
+  // overflow: hidden;
+  // animation-duration: 0.5;
+}
+
+.activities-lists-item.show {
+  height: auto;
+  animation-duration: 0.5;
+}
+
+.activities-lists-item .title > h3 {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.activities-lists-item .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: @--smoke-gray;
+}
+
+// .activities-lists-item.left-item .title>h3::before {
+//     content: "";
+//     height: 2px;
+//     line-height: 24px;
+//     width: 100px;
+//     background: gray;
+//     display: inline-block;
+//     // position: absolute;
+//     // z-index: 3;
+//     // top: 50%;
+//     // left: -120px;
+// }
+
+.activities-lists-item.right-item .title {
+  justify-content: right;
+}
+
+// .activities-lists-item.right-item .title>h3::after {
+//     content: "";
+//     height: 2px;
+//     width: 100px;
+//     background: gray;
+//     position: absolute;
+//     z-index: 3;
+//     top: 50%;
+//     left: 120px;
+// }
+
+.content-item > .content {
+  height: 30rem;
+}
+
+.content-item > .content .content-description {
+  font-style: italic;
+  color: @--smoke-gray;
+  text-align: justify;
+}
+
+.content-item .image::after {
+  content: "";
+  position: absolute;
+  background-color: #025834;
+  z-index: 2;
+  width: 80%;
+  height: 82%;
+  opacity: 0.5;
+}
+
+// .activities-lists-item.left-item .content-item .image::after {
+//     transform: rotate(10deg);
+// }
+
+// .activities-lists-item.right-item .content-item .image::after {
+//     transform: rotate(-10deg);
+// }
+
+.content-item .image img {
+  position: absolute;
+  width: 18rem;
+  z-index: 3;
+  top: -1rem;
+  left: 5rem;
+  border-radius: 2px;
+  box-shadow: 3px 3px 12px #8f8c8c;
+  transition-duration: 0.3s;
+}
+
+.content-item .image img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.3s;
+}
+
+.content-item .item-icon > .col {
+  position: relative;
+}
+
+.content-item .item-icon > .col::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: dashed 2px green;
+  position: absolute;
+  left: -48px;
+  border-radius: 50%;
+}
