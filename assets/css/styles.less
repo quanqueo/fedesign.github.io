@@ -1,5 +1,6 @@
 @--light-dark: #233142;
 @--smoke-gray: #5c5c5c;
+@--back-after-img: #025834;
 
 body {
   margin: 0;
@@ -60,19 +61,42 @@ body {
   animation-duration: 0.5;
 }
 
+.activities-lists-item .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: @--smoke-gray;
+  margin-bottom: 1rem;
+}
+.activities-lists-item.left-item .title {
+  justify-content: left;
+}
+
+.activities-lists-item.right-item .title {
+  justify-content: right;
+}
+
 .activities-lists-item .title > h3 {
   position: relative;
   text-transform: uppercase;
 }
 
-.activities-lists-item .title {
-  font-size: 24px;
-  font-weight: 700;
-  color: @--smoke-gray;
+.activities-lists-item.left-item .title > h3::before {
+  content: "";
+  height: 0.2rem;
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  left: -2.25rem;
+  background-color: @--smoke-gray;
 }
-
-.activities-lists-item.right-item .title {
-  justify-content: right;
+.activities-lists-item.right-item .title > h3::after {
+  content: "";
+  height: 0.2rem;
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  right: -2.25rem;
+  background-color: @--smoke-gray;
 }
 
 .content-item > .content {
@@ -88,7 +112,7 @@ body {
 .content-item .image::after {
   content: "";
   position: absolute;
-  background-color: #025834;
+  background-color: cyan;
   z-index: 2;
   width: 80%;
   height: 82%;
@@ -96,11 +120,11 @@ body {
 }
 
 .activities-lists-item.left-item .content-item .image::after {
-    transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 .activities-lists-item.right-item .content-item .image::after {
-    transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
 
 .content-item .image img {
