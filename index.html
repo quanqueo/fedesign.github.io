@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/grid-basic.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet/less" type="text/css" href="assets/css/styles.less">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/grid-basic.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet/less" type="text/css" href="assets/css/styles.less" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick-theme.css" />
     <title>Document</title>
 </head>
 
 <body>
-
-
     <div id="wrapper">
         <div id="backtop"></div>
         <!-- --Backtop-- -->
@@ -27,7 +27,9 @@
 
         <!-- ==============================Header============================================ -->
         <div id="header">
-            <div class="logo"><a href=""><img src="" alt=""></a></div>
+            <div class="logo">
+                <a href=""><img src="" alt="" /></a>
+            </div>
             <!-- --Logo-- -->
 
             <ul id="main-menu">
@@ -82,7 +84,7 @@
                             <a href="#">Các hoạt động tích cực câu lạc bộ</a>
                         </p>
                     </div>
-                    <div class="activities-lists">
+                    <!-- <div class="activities-lists">
                         <div class="activities-lists-item left-item mb-4">
                             <div class="row title">
                                 <h3 class="mx-lg-5">Đoàn Thanh Niên</h3>
@@ -231,8 +233,348 @@
                                 </div>
                             </div>
                         </div>
+                    </div> -->
+
+                    <!-- --- activities lists original--- -->
+
+                    <div id="activities-carousel" class="carousel slide disable-user-selection" data-ride="carousel">
+                        <div class="carousel-inner" style="box-shadow: 0 0 16px 0px #c7eceeb5">
+                            <div class="carousel-item active">
+                                <div class="activities-lists-item left-item">
+                                    <div class="row title">
+                                        <h3 class="mx-lg-5">Đoàn Thanh Niên</h3>
+                                    </div>
+                                    <div class="row content-item">
+                                        <div class="col content">
+                                            <p class="content-description">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Ipsam ullam ea voluptatem nobis a eos blanditiis
+                                                eveniet ad aliquam eius magnam maxime exercitationem
+                                                fuga, dolorem voluptates sequi. Itaque, atque numquam?
+                                            </p>
+                                            <div
+                                                class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                                <div class="col ml-5">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                                <div class="col ml-5">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col image">
+                                            <img src="./assets/images/img-activities/doantn.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="activities-lists-item right-item">
+                                    <div class="row title">
+                                        <h3 class="mx-lg-5">Hội Sinh Viên</h3>
+                                    </div>
+                                    <div class="row content-item">
+                                        <div class="col image">
+                                            <img src="./assets/images/img-activities/sv.jpg" alt="" />
+                                        </div>
+                                        <div class="col content">
+                                            <p class="content-description">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Ipsam ullam ea voluptatem nobis a eos blanditiis
+                                                eveniet ad aliquam eius magnam maxime exercitationem
+                                                fuga, dolorem voluptates sequi. Itaque, atque numquam?
+                                            </p>
+                                            <div
+                                                class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                                <div class="col ml-5">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                                <div class="col ml-5">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="activities-lists-item left-item">
+                                    <div class="row title">
+                                        <h3 class="mx-lg-5">Thể Dục Thể Thao</h3>
+                                    </div>
+                                    <div class="row content-item">
+                                        <div class="col content">
+                                            <p class="content-description">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Ipsam ullam ea voluptatem nobis a eos blanditiis
+                                                eveniet ad aliquam eius magnam maxime exercitationem
+                                                fuga, dolorem voluptates sequi. Itaque, atque numquam?
+                                            </p>
+                                            <div
+                                                class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                                <div class="col ml-5">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                                <div class="col ml-5">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col image">
+                                            <img src="./assets/images/img-activities/caulong.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="activities-lists-item right-item">
+                                    <div class="row title">
+                                        <h3 class="mx-lg-5">Dancer</h3>
+                                    </div>
+                                    <div class="row content-item">
+                                        <div class="col image">
+                                            <img src="./assets/images/img-activities/dance.jpg" alt="" />
+                                        </div>
+                                        <div class="col content">
+                                            <p class="content-description">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Ipsam ullam ea voluptatem nobis a eos blanditiis
+                                                eveniet ad aliquam eius magnam maxime exercitationem
+                                                fuga, dolorem voluptates sequi. Itaque, atque numquam?
+                                            </p>
+                                            <div
+                                                class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                                <div class="col ml-5">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                                <div class="col ml-5">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                    <p class="text-secondary">Lorem ipsum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --- CAROUSEL bootstrap --- -->
+                    <br>
+                    <div class="slick-slider">
+                        <div class="stick-carousel-item">
+                            <div class="activities-lists-item left-item">
+                                <div class="row title">
+                                    <h3 class="mx-lg-5">Đoàn Thanh Niên</h3>
+                                </div>
+                                <div class="row content-item">
+                                    <div class="col content">
+                                        <p class="content-description">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Ipsam ullam ea voluptatem nobis a eos blanditiis
+                                            eveniet ad aliquam eius magnam maxime exercitationem
+                                            fuga, dolorem voluptates sequi. Itaque, atque numquam?
+                                        </p>
+                                        <div class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                            <div class="col ml-5">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                        <div class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                            <div class="col ml-5">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col image">
+                                        <img src="./assets/images/img-activities/doantn.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stick-carousel-item">
+                            <div class="activities-lists-item right-item">
+                                <div class="row title">
+                                    <h3 class="mx-lg-5">Hội Sinh Viên</h3>
+                                </div>
+                                <div class="row content-item">
+                                    <div class="col image">
+                                        <img src="./assets/images/img-activities/sv.jpg" alt="" />
+                                    </div>
+                                    <div class="col content">
+                                        <p class="content-description">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Ipsam ullam ea voluptatem nobis a eos blanditiis
+                                            eveniet ad aliquam eius magnam maxime exercitationem
+                                            fuga, dolorem voluptates sequi. Itaque, atque numquam?
+                                        </p>
+                                        <div class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                            <div class="col ml-5">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                        <div class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                            <div class="col ml-5">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stick-carousel-item">
+                            <div class="activities-lists-item left-item">
+                                <div class="row title">
+                                    <h3 class="mx-lg-5">Thể Dục Thể Thao</h3>
+                                </div>
+                                <div class="row content-item">
+                                    <div class="col content">
+                                        <p class="content-description">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Ipsam ullam ea voluptatem nobis a eos blanditiis
+                                            eveniet ad aliquam eius magnam maxime exercitationem
+                                            fuga, dolorem voluptates sequi. Itaque, atque numquam?
+                                        </p>
+                                        <div class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                            <div class="col ml-5">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                        <div class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                            <div class="col ml-5">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col image">
+                                        <img src="./assets/images/img-activities/caulong.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stick-carousel-item">
+                            <div class="activities-lists-item right-item">
+                                <div class="row title">
+                                    <h3 class="mx-lg-5">Dancer</h3>
+                                </div>
+                                <div class="row content-item">
+                                    <div class="col image">
+                                        <img src="./assets/images/img-activities/dance.jpg" alt="" />
+                                    </div>
+                                    <div class="col content">
+                                        <p class="content-description">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Ipsam ullam ea voluptatem nobis a eos blanditiis
+                                            eveniet ad aliquam eius magnam maxime exercitationem
+                                            fuga, dolorem voluptates sequi. Itaque, atque numquam?
+                                        </p>
+                                        <div class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                            <div class="col ml-5">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                        <div class="item-icon row justify-content-center align-items-center my-4 mx-2">
+                                            <div class="col ml-5">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-primary mb-0">Lorem ipsum</h5>
+                                                <p class="text-secondary">Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- --- Stick draggable CAROUSEL jquery --- -->
                 </div>
                 <!-- --Activities-- -->
 
@@ -254,16 +596,8 @@
                 </div>
                 <!-- --Reading-- -->
             </div>
-
         </div>
         <!-- ===END CONTENT=== -->
-
-
-
-
-
-
-
 
         <!-- ==============================Footer============================================ -->
         <div id="footer">
@@ -294,11 +628,11 @@
     <!-- ---JS--- -->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/less.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="./assets/js/activityhover.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
-
 
 </html>
