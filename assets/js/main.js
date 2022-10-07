@@ -4,21 +4,30 @@ $(".carousel").carousel({
 
 $(".slick-slider").slick({
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     dots: false,
     arrows: false,
-    infinite: true,
+    infinite: false,
     vertical: true,
     draggable: true,
-    speed: 600,
+    speed: 300,
     autoplaySpeed: 2500,
 });
-$(".slick-slider").on("wheel", function (e) {
-    e.preventDefault();
+
+$(".slick-slider").on("wheel", function (e)  {
+
+    var item_length = $(".slick-slider .stick-carousel-item").length - 1;
+    
     let scrollY = e.originalEvent.deltaY;
     if (scrollY < 0) {
-        $(this).slick("slickNext");
+        if (!($(this).slick("slickCurrentSlide") == 0)) {
+            e.preventDefault();
+            $(this).slick("slickPrev");
+        }
     } else {
-        $(this).slick("slickPrev");
+        if (!($(this).slick("slickCurrentSlide") == item_length)) {
+            e.preventDefault();
+            $(this).slick("slickNext");
+        }
     }
 });
