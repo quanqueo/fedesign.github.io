@@ -1,0 +1,30 @@
+
+#login-form .input-box input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ced4da;
+}
+#login-form .input-box input:valid, #login-form .input-box input:focus{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+#login-form .input-box label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 1rem;
+    pointer-events: none;
+    transition: .5s;
+    background: none!important;
+    border: none!important;
+}
+
+#login-form .input-box input:focus ~ label, #login-form .input-box input:valid ~ label{
+    color: green;
+    padding-left: 0.5rem;
+    top: -2rem;
+}
