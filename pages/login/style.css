@@ -3,13 +3,13 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ced4da;
 }
 #login-form .input-box input:valid, #login-form .input-box input:focus{
     border-top: none;
     border-left: none;
     border-right: none;
     outline: none;
+    box-shadow: none;
 }
 
 #login-form .input-box label{
@@ -25,6 +25,6 @@
 
 #login-form .input-box input:focus ~ label, #login-form .input-box input:valid ~ label{
     color: green;
-    padding-left: 0.5rem;
-    top: -2rem;
+    padding-left: 0.75rem;
+    top: -1.5rem;
 }
