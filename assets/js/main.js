@@ -4,14 +4,14 @@ $(".carousel").carousel({
 
 $(".slick-slider").slick({
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     dots: false,
     arrows: false,
     infinite: false,
     vertical: true,
     draggable: true,
     speed: 300,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 2000,
 });
 
 $(".slick-slider").on("wheel", function (e)  {
