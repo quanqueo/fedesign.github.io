@@ -31,6 +31,3 @@ $(".slick-slider").on("wheel", function (e)  {
         }
     }
 });
-
-
-});
