@@ -2,6 +2,7 @@
 @--smoke-gray: #5c5c5c;
 @--back-after-img: #025834;
 
+
 .disable-user-selection {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -54,9 +55,16 @@ span#backtop{
 }
 //                   ============HEADER============   
 #header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   background-color: transparent;
   display: flex;
+  transition: 0.3s;
   padding: 20px 50px;
+  
 
   .logo{
     display: block;
@@ -72,6 +80,23 @@ span#backtop{
 
     li{
       padding: 10px 20px;
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      
+      ul.sub-menu{
+        transition: 0.4s;
+        transform: scaleY(0);
+        transform-origin: 100% 0%;
+      }
+
+      
+    }
+
+    li:hover{
+      ul.sub-menu{
+        transform: scaleY(1);
+      }
     }
   }
 
@@ -95,6 +120,7 @@ span#backtop{
 
 //                   ============CONTENT============                  
 #content {
+  margin-top: 300px;
   background-color: rgb(236, 240, 241);
   background-size: 100%;
   padding-bottom: 3rem;
