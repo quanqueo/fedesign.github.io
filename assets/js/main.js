@@ -1,5 +1,5 @@
 $(document).ready(function(){
-        $(".carousel").carousel({
+    $(".carousel").carousel({
         interval: 2500,
     });
 
@@ -45,4 +45,27 @@ $(document).ready(function(){
             });;
         }
     });
+
+
+    $("li.menu-item").click(function(){
+        var subMenu = $(this).children("ul.sub-menu");
+    
+        if(subMenu.hasClass("show"))
+        {
+            subMenu.removeClass("show");
+            $(this).children("span").children("i").removeClass("active");
+        }
+        else{
+            $("li.menu-item").children("ul.sub-menu").removeClass("show");
+            $("li.menu-item").children("span").children("i").removeClass("active"); 
+            subMenu.addClass("show");
+            $(this).children("span").children("i").addClass("active"); 
+        } 
+        
+    });
+
+    $("#content").click(function(){
+        $("li.menu-item").children("ul.sub-menu").removeClass("show");
+        $(this).children("span").children("i").removeClass("active");
+    })
 });
