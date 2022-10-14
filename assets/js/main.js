@@ -47,11 +47,11 @@ $(document).ready(function(){
                 "background-color": "transparent"
             });
         }
-        $("#backtop").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, 1000);
-         });
+        
     });
-
+    $("#backtop").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+    });
     $("li.menu-item").click(function(){
         var subMenu = $(this).children("ul.sub-menu");
         $("#header").css({
