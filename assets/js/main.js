@@ -35,21 +35,29 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         if($(this).scrollTop() >= 20){
+            $("#backtop").show(500);
             $("#header").css({
-                "background-color": "white",
+                "background-color": "white"
             });
+            
         }
         else{
+            $("#backtop").hide(500);
             $("#header").css({
-                "background-color": "transparent",
-            });;
+                "background-color": "transparent"
+            });
         }
+        $("#backtop").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+         });
     });
-
 
     $("li.menu-item").click(function(){
         var subMenu = $(this).children("ul.sub-menu");
-    
+        $("#header").css({
+            "background-color": "white",
+        });
+        
         if(subMenu.hasClass("show"))
         {
             subMenu.removeClass("show");
@@ -66,6 +74,9 @@ $(document).ready(function(){
 
     $("#content").click(function(){
         $("li.menu-item").children("ul.sub-menu").removeClass("show");
-        $(this).children("span").children("i").removeClass("active");
+        $("li.menu-item").children("span").children("i").removeClass("active");
+        $("#header").css({
+            "background-color": "transparent",
+        });;
     })
 });
