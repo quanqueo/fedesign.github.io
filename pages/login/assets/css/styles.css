@@ -1,10 +1,10 @@
 
-#login-form .input-box input{
+.input-form .input-box input{
     border-top: none;
     border-left: none;
     border-right: none;
 }
-#login-form .input-box input:valid, #login-form .input-box input:focus{
+.input-form .input-box input:valid, .input-form .input-box input:focus{
     border-top: none;
     border-left: none;
     border-right: none;
@@ -12,7 +12,7 @@
     box-shadow: none;
 }
 
-#login-form .input-box label{
+.input-form .input-box label{
     position: absolute;
     left: 0;
     top: 0;
@@ -23,10 +23,14 @@
     border: none!important;
 }
 
-#login-form .input-box input:focus ~ label, #login-form .input-box input:valid ~ label{
+.input-form .input-box input:focus ~ label, .input-form .input-box input:valid ~ label{
     font-size: 80%;
     font-weight: 700;
     color: green;
     padding-left: 0.75rem;
     top: -1.5rem;
 }
+.input-form .badge-link:hover{
+    color: #f53677;
+}
+
