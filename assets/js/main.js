@@ -75,8 +75,9 @@ $(document).ready(function(){
     $("#content").click(function(){
         $("li.menu-item").children("ul.sub-menu").removeClass("show");
         $("li.menu-item").children("span").children("i").removeClass("active");
-        $("#header").css({
-            "background-color": "transparent",
-        });;
     })
+
+    $("li.menu-item:first-child").click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+    });
 });
