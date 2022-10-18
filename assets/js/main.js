@@ -79,5 +79,8 @@ $(document).ready(function(){
 
     $("li.menu-item:first-child").click(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
+        $("#header").css({
+            "background-color": "transparent"
+        });
     });
 });
