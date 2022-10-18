@@ -119,6 +119,16 @@ $().ready(function () {
         }
     });
 
-    
+    $("#ToRegisterForm").click(function (e) {
+        $("#section-login").removeClass("d-flex").addClass("d-none");
+        $("#section-register").removeClass("d-none").addClass("d-flex");
+        e.preventDefault();
+    })
 
+    $("#ToLoginForm").click(function (e) {
+        $("#section-register").removeClass("d-flex").addClass("d-none");
+        $("#section-login").removeClass("d-none").addClass("d-flex");
+        e.preventDefault();
+    })
+    
 });
