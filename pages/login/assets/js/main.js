@@ -1,6 +1,5 @@
 
 $().ready(function () {
-
     // Validate Username
     $("#usercheck").hide();
     let usernameError = true;
@@ -25,7 +24,6 @@ $().ready(function () {
     }
 
     // Validate Email
-
     const email = document.getElementById("r-email");
     email.addEventListener("blur", () => {
         let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
@@ -88,7 +86,6 @@ $().ready(function () {
     $("#re-r-password").keyup(function () {
         validateConfirmPassword();
     });
-
     function validateConfirmPassword() {
         let confirmPasswordValue = $("#re-r-password").val();
         let passwordValue = $("#r-password").val();
@@ -121,4 +118,7 @@ $().ready(function () {
             return false;
         }
     });
+
+    
+
 });
