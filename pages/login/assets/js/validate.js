@@ -28,15 +28,17 @@ $().ready(function () {
 
     const email = document.getElementById("r-email");
     email.addEventListener("blur", () => {
-    let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
-    let s = email.value;
-    if (regex.test(s)) {
-      email.classList.remove("is-invalid");
-      emailError = true;
-    } else {
-      email.classList.add("is-invalid");
-      emailError = false;
-    }
+        let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+        let s = email.value;
+        if (regex.test(s)) {
+            email.classList.remove("is-invalid");
+            emailError = true;
+        } else {
+            email.classList.add("is-invalid");
+            emailError = false;
+        }
+    });
+
     // $('#r-email').blur(function () {
     //     validateEmail();
     // });
@@ -55,7 +57,7 @@ $().ready(function () {
     // }
 
     // Validate Password
-    // $("#passcheck").hide();
+    $("#passcheck").hide();
     let passwordError = true;
     $("#r-password").keyup(function () {
         validatePassword();
@@ -86,6 +88,7 @@ $().ready(function () {
     $("#re-r-password").keyup(function () {
         validateConfirmPassword();
     });
+
     function validateConfirmPassword() {
         let confirmPasswordValue = $("#re-r-password").val();
         let passwordValue = $("#r-password").val();
