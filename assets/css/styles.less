@@ -183,7 +183,7 @@ span#backtop {
   background-size: 100%;
   padding-bottom: 3rem;
 
-  >.container {
+  .container {
     background-color: white;
     border-radius: 0.5rem;
   }
@@ -205,6 +205,55 @@ span#backtop {
     a {
       &:hover {
         text-decoration: none;
+      }
+    }
+  }
+
+
+
+  #courses{
+    ul.nav{
+      justify-content: right;
+    }
+    ul#tab-course-cpp{
+      
+      li{
+        height: auto;
+        overflow: hidden;
+        padding-top: 20px;
+        
+        a.learnMore{
+          font-size: 13px;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        a.tab-item-img{
+          cursor: pointer;
+          overflow: hidden;
+          
+          img{
+            transition: 0.4s;
+            transform: scale(1);
+            margin-bottom: 20px;
+            height: 180px;
+          }
+          img:hover{
+            transform: scale(1.04);
+          }
+        }
+        span.title-course{
+          font-size: 28px;
+          margin: 20px 0px 0px 0px;
+          font-weight: bold;
+        }
+        .info-course{
+          padding: 10px 0px 15px;
+          font-size: 12px;
+          justify-content: space-between;
+          display: flex;
+          color: black;
+        }
       }
     }
   }
