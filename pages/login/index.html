@@ -59,11 +59,11 @@
                                 <div class="">
                                     <div class="position-relative input-box mb-4">
                                         <input type="text" name="email" id="email" class="form-control" required>
-                                        <label class="form-control">Email</label>
+                                        <label class="form-control label-name">Email</label>
                                     </div>
                                     <div class="position-relative input-box mb-4">
                                         <input type="password" name="password" id="password" class="form-control" required>
-                                        <label class="form-control">Mật khẩu</label>
+                                        <label class="form-control label-name">Mật khẩu</label>
                                     </div>
                                     <div class="position-relative d-flex justify-content-between">
                                         <input type="button" id="login-btn" class="btn btn-success ml-2" value="Đăng nhập">
@@ -76,27 +76,31 @@
                         </div>
                         <div class="d-flex flex-column px-5 register">
                             <h4 class="my-4 text-center">Đăng ký</h4>
-                            <form id="register-form " class="input-form" action="">
-                                <div class="">
-                                    <div class="position-relative input-box mb-4">
-                                        <input type="text" name="email" id="email" class="form-control" required>
-                                        <label class="form-control">Email</label>
-                                    </div>
-                                    <div class="position-relative input-box mb-4">
-                                        <input type="password" name="password" id="password" class="form-control" required>
-                                        <label class="form-control">Mật khẩu</label>
-                                    </div>
-                                    <div class="position-relative input-box mb-4">
-                                        <input type="password" name="confirm-password" id="confirm-password" class="form-control" required>
-                                        <label class="form-control">Nhập lại mật khẩu</label>
-                                    </div>
-                                    <div class="position-relative d-flex justify-content-between">
-                                        <input type="button" id="registerbtn" class="btn btn-success ml-2" value="Đăng ký">
-                                        <div class="d-flex align-items-center">
-                                            <span class="badge">Đã có tài khoản?</span><a id="" class="badge badge-light badge-link" href="#"><u>Đăng nhập!</u></a>
+                            <form id="register-form" class="input-form" action="">
+                                <fieldset>
+                                    <div class="">
+                                        <div class="position-relative input-box mb-4">
+                                            <input type="email" name="email" id="r-email" class="form-control" required>
+                                            <label class="form-control label-name">Email</label>
+                                        </div>
+                                        <div class="position-relative input-box mb-4">
+                                            <input type="password" name="password" id="r-password" class="form-control" required>
+                                            <label class="form-control label-name">Mật khẩu</label>
+                                            <label for="r-passowrd" id="passcheck" class="errormessage">**vui lòng nhập trường này!</label>
+                                        </div>
+                                        <div class="position-relative input-box mb-4">
+                                            <input type="password" name="re-password" id="re-r-password" class="form-control" required>
+                                            <label class="form-control label-name">Nhập lại mật khẩu</label>
+                                            <label for="re-r-passowrd" id="conpasscheck"class="errormessage"></label>
+                                        </div>
+                                        <div class="position-relative d-flex justify-content-between">
+                                            <input type="button" id="registerbtn" class="btn btn-success ml-2" value="Đăng ký">
+                                            <div class="d-flex align-items-center">
+                                                <span class="badge">Đã có tài khoản?</span><a id="" class="badge badge-light badge-link" href="#"><u>Đăng nhập!</u></a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </fieldset>
                             </form>
                         </div>
                     </div>
@@ -108,6 +112,7 @@
     <script src="../../assets/js/less.js"></script>
     <script src="../../assets/js/popper.min.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../aassets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="../../assets/js/main.js"></script>
     <script src="./assets/js/validate.js"></script>
 </body>

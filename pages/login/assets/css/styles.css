@@ -12,7 +12,7 @@
     box-shadow: none;
 }
 
-.input-form .input-box label{
+.input-form .input-box .label-name{
     position: absolute;
     left: 0;
     top: 0;
@@ -22,8 +22,13 @@
     background: none!important;
     border: none!important;
 }
+.input-form .input-box .errormessage{
+    color: red;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+}
 
-.input-form .input-box input:focus ~ label, .input-form .input-box input:valid ~ label{
+.input-form .input-box input:focus ~ .label-name, .input-form .input-box input:valid ~ .label-name{
     font-size: 80%;
     font-weight: 700;
     color: green;
