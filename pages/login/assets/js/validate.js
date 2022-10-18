@@ -55,7 +55,7 @@ $().ready(function () {
     // }
 
     // Validate Password
-    $("#passcheck").hide();
+    // $("#passcheck").hide();
     let passwordError = true;
     $("#r-password").keyup(function () {
         validatePassword();

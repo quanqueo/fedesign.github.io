@@ -27,21 +27,52 @@
 
         <!-- ==============================Header============================================ -->
         <div id="header">
-            <div class="logo">
-                <a href=""><img src="" alt="" /></a>
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href=""><img src="assets/images/hinhanhITC/LOGO/logo.png" alt="" /></a>
+                </div>
+                <!-- --Logo-- -->
+    
+                <ul id="main-menu">
+                    <li class="menu-item"><a href="#">Trang chủ</a></li>
+                    <li class="menu-item"><span href="">Hoạt động <i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-activities">
+                            <li class="sub-menu-item"><a href="#">Văn hoá</a></li>
+                            <li class="sub-menu-item"><a href="#">Văn nghệ</a></li>
+                            <li class="sub-menu-item"><a href="#">Nghệ thuật</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><span href="">Khóa học <i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-course">
+                            <li class="sub-menu-item"><a href="#">C++</a></li>
+                            <li class="sub-menu-item"><a href="#">C#</a></li>
+                            <li class="sub-menu-item"><a href="#">Website</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><span href="">Chương trình <i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-program">
+                            <li class="sub-menu-item"><a href="#">Tri ân</a></li>
+                            <li class="sub-menu-item"><a href="#">Khuyến học</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><span href="">Sự kiện <i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-event">
+                            <li class="sub-menu-item"><a href="#">Sinh nhật</a></li>
+                            <li class="sub-menu-item"><a href="#">Chào mừng</a></li>
+                            <li class="sub-menu-item"><a href="#">Chào hè</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><span href="">Liên hệ <i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-contact">
+                            <li class="sub-menu-item"><a href="#">Email</a></li>
+                            <li class="sub-menu-item"><a href="#">Fanpage</a></li>
+                            <li class="sub-menu-item"><a href="#">Hotline</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="login d-flex align-items-center" href="pages/login/">Đăng nhập</a>
+                <!-- --Main Menu-- -->
             </div>
-            <!-- --Logo-- -->
-
-            <ul id="main-menu">
-                <li class="menu-item"><a href="../../">Trang chủ</a></li>
-                <li class="menu-item"><a href="">Hoạt động</a></li>
-                <li class="menu-item"><a href="">Khóa học</a></li>
-                <li class="menu-item"><a href="">Chương trình</a></li>
-                <li class="menu-item"><a href="">Sự kiện</a></li>
-                <li class="menu-item"><a href="">Liên hệ</a></li>
-                <li class="menu-item"><a href="">Đăng nhập</a></li>
-            </ul>
-            <!-- --Main Menu-- -->
         </div>
         <!-- ===END HEADER=== -->
 
@@ -80,11 +111,11 @@
                                 <fieldset>
                                     <div class="">
                                         <div class="position-relative input-box mb-4">
-                                            <input type="email" name="email" id="r-email" class="form-control" required>
+                                            <input type="email" name="r-email" id="r-email" class="form-control" required>
                                             <label class="form-control label-name">Email</label>
                                         </div>
                                         <div class="position-relative input-box mb-4">
-                                            <input type="password" name="password" id="r-password" class="form-control" required>
+                                            <input type="password" name="r-password" id="r-password" class="form-control" required>
                                             <label class="form-control label-name">Mật khẩu</label>
                                             <label for="r-passowrd" id="passcheck" class="errormessage">**vui lòng nhập trường này!</label>
                                         </div>
