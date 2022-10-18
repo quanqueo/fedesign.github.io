@@ -122,12 +122,14 @@ $().ready(function () {
     $("#ToRegisterForm").click(function (e) {
         $("#section-login").removeClass("d-flex").addClass("d-none");
         $("#section-register").removeClass("d-none").addClass("d-flex");
+        document.title = "Đăng ký tài khoản mới" ;
         e.preventDefault();
     })
 
     $("#ToLoginForm").click(function (e) {
         $("#section-register").removeClass("d-flex").addClass("d-none");
         $("#section-login").removeClass("d-none").addClass("d-flex");
+        document.title = "Đăng nhập";
         e.preventDefault();
     })
     
