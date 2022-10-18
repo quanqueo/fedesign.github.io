@@ -132,5 +132,4 @@ $().ready(function () {
         document.title = "Đăng nhập";
         e.preventDefault();
     })
-    
 });
