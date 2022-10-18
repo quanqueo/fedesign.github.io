@@ -1,61 +1,54 @@
 .input-form {
-	.input-box {
-		input {
-			border-top: none;
-			border-left: none;
-			border-right: none;
-			&:valid {
-				border-top: none;
-				border-left: none;
-				border-right: none;
-				outline: none;
-				box-shadow: none;
-			}
-			&:focus {
-				border-top: none;
-				border-left: none;
-				border-right: none;
-				outline: none;
-				box-shadow: none;
-			}
-			&:focus~.label-name {
-				font-size: 80%;
-				font-weight: 700;
-				color: green;
-				padding-left: 0.75rem;
-				top: -1.5rem;
-			}
-			&:valid~.label-name {
-				font-size: 80%;
-				font-weight: 700;
-				color: green;
-				padding-left: 0.75rem;
-				top: -1.5rem;
-			}
-		}
-		.label-name {
-			position: absolute;
-			left: 0;
-			top: 0;
-			padding-left: 1rem;
-			pointer-events: none;
-			transition: .5s;
-			background: none !important;
-			border: none !important;
-		}
-		.errormessage {
-			color: red;
-			padding-left: 1rem;
-			font-size: 0.8rem;
-		}
-		input[type=email] {
-			&:not(:placeholder-shown)~.label-name {
-				font-size: 80%;
-				font-weight: 700;
-				color: green;
-				padding-left: 0.75rem;
-				top: -1.5rem;
-			}
-		}
-	}
+    .input-box {
+        input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+
+            &:valid,
+            &:focus {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                box-shadow: none;
+            }
+
+            &:focus~.label-name,
+            &:valid~.label-name {
+                font-size: 80%;
+                font-weight: 700;
+                color: green;
+                padding-left: 0.75rem;
+                top: -1.5rem;
+            }
+        }
+
+        .label-name {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding-left: 1rem;
+            pointer-events: none;
+            transition: 0.5s;
+            background: none !important;
+            border: none !important;
+        }
+
+        .errormessage {
+            color: red;
+            padding-left: 1rem;
+            font-size: 0.8rem;
+        }
+
+        input[type="email"] {
+            &:not(:placeholder-shown)~.label-name {
+                font-size: 80%;
+                font-weight: 700;
+                color: green;
+                padding-left: 0.75rem;
+                top: -1.5rem;
+            }
+        }
+    }
 }
