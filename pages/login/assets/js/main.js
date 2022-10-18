@@ -1,48 +1,9 @@
 
 $().ready(function () {
-    // Validate Username
-    $("#usercheck").hide();
-    let usernameError = true;
-    $("#usernames").keyup(function () {
-        validateUsername();
-    });
-
-    function validateUsername() {
-        let usernameValue = $("#usernames").val();
-        if (usernameValue.length == "") {
-            $("#usercheck").show();
-            usernameError = false;
-            return false;
-        } else if (usernameValue.length < 3 || usernameValue.length > 10) {
-            $("#usercheck").show();
-            $("#usercheck").html("**length of username must be between 3 and 10");
-            usernameError = false;
-            return false;
-        } else {
-            $("#usercheck").hide();
-        }
-    }
 
     // Validate Email
     const email = document.getElementById("r-email");
-    email.addEventListener("blur", () => {
-        let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
-        let s = email.value;
-        if (regex.test(s)) {
-            email.classList.remove("is-invalid");
-            emailError = true;
-        } else {
-            email.classList.add("is-invalid");
-            emailError = false;
-        }
-    });
-
-    // $('#r-email').blur(function () {
-    //     validateEmail();
-    // });
-
-    // function validateEmail() {
-    //     const email = document.getElementById("r-email");
+    // email.addEventListener("blur", () => {
     //     let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
     //     let s = email.value;
     //     if (regex.test(s)) {
@@ -52,7 +13,24 @@ $().ready(function () {
     //         email.classList.add("is-invalid");
     //         emailError = false;
     //     }
-    // }
+    // });
+
+    $('#r-email').blur(function () {
+        validateEmail();
+    });
+    let emailError = true;
+    function validateEmail() {
+        const email = document.getElementById("r-email");
+        let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+        let s = email.value;
+        if (regex.test(s)) {
+            email.classList.remove("is-invalid");
+            emailError = true;
+        } else {
+            email.classList.add("is-invalid");
+            emailError = false;
+        }
+    }
 
     // Validate Password
     $("#passcheck").hide();
@@ -64,6 +42,7 @@ $().ready(function () {
         let passwordValue = $("#r-password").val();
         if (passwordValue.length == "") {
             $("#passcheck").show();
+            $("#passcheck").html("**vui lòng nhập trường này!")
             passwordError = false;
             return false;
         }
@@ -76,6 +55,7 @@ $().ready(function () {
             passwordError = false;
             return false;
         } else {
+            passwordError = true;
             $("#passcheck").hide();
         }
     }
@@ -89,30 +69,33 @@ $().ready(function () {
     function validateConfirmPassword() {
         let confirmPasswordValue = $("#re-r-password").val();
         let passwordValue = $("#r-password").val();
-        if (passwordValue != confirmPasswordValue) {
+        let isEmpty = (confirmPasswordValue == "") ? true : false;
+        let isnotEqual = (passwordValue != confirmPasswordValue) ? true : false;
+        if (isEmpty || isnotEqual) {
             $("#conpasscheck").show();
-            $("#conpasscheck").html("**Mật khẩu không trùng khớp");
             $("#conpasscheck").css("color", "red");
+            if (isEmpty) $("#conpasscheck").html("**vui lòng nhập trường này!");
+            else $("#conpasscheck").html("**Mật khẩu không trùng khớp");
             confirmPasswordError = false;
             return false;
         } else {
+            confirmPasswordError = true;
             $("#conpasscheck").hide();
         }
     }
 
     // Submit button
     $("#registerbtn").click(function () {
-        // validateUsername();
         validatePassword();
         validateConfirmPassword();
-        // validateEmail();
-        email.blur();
+        validateEmail();
         if (
             passwordError == true &&
             confirmPasswordError == true &&
             emailError == true
         ) {
-            console.log("success")
+            alert("Đăng ký thành công, chuyển về trang đăng nhập!");
+            $("#ToLoginForm").click();
             return true;
         } else {
             return false;
@@ -122,7 +105,7 @@ $().ready(function () {
     $("#ToRegisterForm").click(function (e) {
         $("#section-login").removeClass("d-flex").addClass("d-none");
         $("#section-register").removeClass("d-none").addClass("d-flex");
-        document.title = "Đăng ký tài khoản mới" ;
+        document.title = "Đăng ký tài khoản mới";
         e.preventDefault();
     })
 
