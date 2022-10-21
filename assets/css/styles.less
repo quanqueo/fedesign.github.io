@@ -278,7 +278,18 @@ span#backtop {
       height: auto;
       animation-duration: 0.5;
     }
+    
+    .title {
+      font-size: 24px;
+      font-weight: 800;
+      color: @--smoke-gray;
+      margin-bottom: 1rem;
 
+      >h3 {
+        position: relative;
+        text-transform: uppercase;
+      }
+    }
     &.left-item {
       .title {
         justify-content: left;
@@ -319,18 +330,6 @@ span#backtop {
             left: -3.25rem;
             background-color: @--smoke-gray;
           }
-        }
-      }
-
-      .title {
-        font-size: 24px;
-        font-weight: 800;
-        color: @--smoke-gray;
-        margin-bottom: 1rem;
-
-        >h3 {
-          position: relative;
-          text-transform: uppercase;
         }
       }
     }
