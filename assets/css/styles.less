@@ -161,7 +161,7 @@ span#backtop {
 }
 
 #header:hover {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 //                   ============END HEADER============
@@ -197,69 +197,68 @@ span#backtop {
     line-height: 2.8rem;
     background: transparent;
     font-weight: bold;
-    color: #710202;
     font-size: 28px;
-    padding-bottom: -13px;
     margin-bottom: 6px;
     font-family: revert;
     font-style: oblique;
 
     a {
+
       &:hover {
         text-decoration: none;
       }
     }
   }
+}
 
-  #courses {
-    ul.nav {
-      justify-content: right;
-    }
+#courses {
+  ul.nav {
+    justify-content: right;
+  }
 
-    ul#tab-course-cpp {
+  ul#tab-course-cpp {
 
-      li {
-        height: auto;
-        overflow: hidden;
-        padding-top: 20px;
+    li {
+      height: auto;
+      overflow: hidden;
+      padding-top: 20px;
 
-        a.learnMore {
-          font-size: 13px;
+      a.learnMore {
+        font-size: 13px;
 
-          &:hover {
-            cursor: pointer;
-          }
-        }
-
-        a.tab-item-img {
+        &:hover {
           cursor: pointer;
-          overflow: hidden;
+        }
+      }
 
-          img {
-            transition: 0.4s;
-            transform: scale(1);
-            margin-bottom: 20px;
-            height: 180px;
-          }
+      a.tab-item-img {
+        cursor: pointer;
+        overflow: hidden;
 
-          img:hover {
-            transform: scale(1.04);
-          }
+        img {
+          transition: 0.4s;
+          transform: scale(1);
+          margin-bottom: 20px;
+          height: 180px;
         }
 
-        span.title-course {
-          font-size: 28px;
-          margin: 20px 0px 0px 0px;
-          font-weight: bold;
+        img:hover {
+          transform: scale(1.04);
         }
+      }
 
-        .info-course {
-          padding: 10px 0px 15px;
-          font-size: 12px;
-          justify-content: space-between;
-          display: flex;
-          color: black;
-        }
+      span.title-course {
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+        font-weight: bold;
+      }
+
+      .info-course {
+        padding: 10px 0px 15px;
+        font-size: 12px;
+        justify-content: space-between;
+        display: flex;
+        color: black;
       }
     }
   }
@@ -280,7 +279,7 @@ span#backtop {
       height: auto;
       animation-duration: 0.5;
     }
-    
+
     .title {
       font-size: 24px;
       font-weight: 800;
@@ -292,6 +291,7 @@ span#backtop {
         text-transform: uppercase;
       }
     }
+
     &.left-item {
       .title {
         justify-content: left;
@@ -347,6 +347,7 @@ span#backtop {
         height: 26rem;
 
         .content-description {
+
           font-style: italic;
           color: @--light-dark;
           text-align: justify;
@@ -416,9 +417,17 @@ span#backtop {
       transition: .3s ease-in-out;
       position: relative;
 
+      box-shadow: 0 3px 2px #00000020;
+
+      &:hover {
+        .title {
+          color: var(--primary) !important;
+        }
+      }
+
       &:has(.flex-row-reverse) {
 
-        border-left: 1px solid #0000003b;
+        // border-left: 1px solid #0000003b;
 
         &::before {
           position: absolute;
@@ -438,11 +447,16 @@ span#backtop {
             border-left: 6px solid #328be9;
             left: -0.25rem;
           }
+
+          figure img {
+            -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+          }
         }
       }
 
       &:has(.flex-row) {
-        border-right: 1px solid #0000003b;
+        // border-right: 1px solid #0000003b;
 
         &::before {
           position: absolute;
@@ -461,6 +475,11 @@ span#backtop {
           &::before {
             border-right: 6px solid #328be9;
             right: -0.25rem;
+          }
+
+          figure img {
+            -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
           }
         }
       }
@@ -511,21 +530,6 @@ span#backtop {
         transition: .3s ease-in-out;
       }
 
-      .flex-row-reverse {
-        figure:hover img {
-          -webkit-transform: translateX(10px);
-          transform: translateX(10px);
-        }
-      }
-
-      .flex-row {
-        figure:hover img {
-          -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
-        }
-      }
-
-
       .highlight-item-text {
 
         position: relative;
@@ -535,9 +539,12 @@ span#backtop {
 
           .title {
             color: @--light-dark;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
           }
 
           >p {
+            font-size: .8rem;
             font-style: italic;
             color: var(--secondary);
           }
@@ -546,6 +553,12 @@ span#backtop {
             color: var(--secondary);
             text-align: justify;
           }
+        }
+
+        .time-area {
+          font-size: .8rem;
+          font-style: italic;
+          color: var(--secondary);
         }
       }
     }
