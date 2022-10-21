@@ -211,6 +211,61 @@ span#backtop {
   }
 }
 
+#featured-members{
+  height: auto;
+  ul.featuredMem-menu{
+    padding: 0px;
+    display: inline-block;
+    flex-direction: row;
+    height: auto;
+    li{
+      height: auto;
+      padding: 20px 30px;
+      background-color: white;
+
+      span{
+        width: 100%;
+        img{
+         
+          transition: 0.4s;
+        }
+      }
+      
+    }
+    li:hover img{
+      transform: rotate(1deg);
+      box-shadow: 5px 15px 20px rgba(145, 142, 142, 0.2);
+    } 
+  }
+
+  .content-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span{
+      font-weight: bold;
+    }
+    span:nth-child(2){
+      font-size: 30px;
+    }
+    span:nth-child(3){
+      font-size: 80px;
+    }
+    i{
+      display: inline-block;
+      padding: 10px;
+      border: 1px solid #d8e4f2;
+      background-color: #d8e4f2;
+      border-radius: 50px;
+      font-size: 12px;
+    }
+  }
+}
+
+
+
+
 #courses {
   ul.nav {
     justify-content: right;
