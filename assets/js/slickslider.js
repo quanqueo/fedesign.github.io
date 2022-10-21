@@ -1,13 +1,13 @@
 $(".slick-slider").slick({
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     dots: false,
     arrows: false,
     infinite: false,
     vertical: true,
     draggable: true,
     speed: 300,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
 });
 
 $(".slick-slider").on("wheel", function (e) {
