@@ -7,7 +7,7 @@ $(".slick-slider").slick({
     horizontal: true,
     draggable: true,
     speed: 300,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 4000,
 });
 
 $(".slick-slider").on("wheel", function (e) {
