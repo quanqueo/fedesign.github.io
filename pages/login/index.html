@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../assets/css/responsive.css" />
     <link rel="stylesheet/less" type="text/css" href="../../assets/css/styles.less" />
     <link rel="stylesheet" href="../../assets/fonts/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet/less" type="text/css" href="./assets/css/styles.less">
     <title>Đăng nhập</title>
 </head>
 
@@ -27,21 +27,52 @@
 
         <!-- ==============================Header============================================ -->
         <div id="header">
-            <div class="logo">
-                <a href=""><img src="" alt="" /></a>
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href=""><img src="assets/images/hinhanhITC/LOGO/logo.png" alt="" /></a>
+                </div>
+                <!-- --Logo-- -->
+    
+                <ul id="main-menu">
+                    <li class="menu-item"><a href="../../">Trang chủ</a></li>
+                    <li class="menu-item"><span href="">Hoạt động<i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-activities">
+                            <li class="sub-menu-item"><a href="#">Văn hoá</a></li>
+                            <li class="sub-menu-item"><a href="#">Văn nghệ</a></li>
+                            <li class="sub-menu-item"><a href="#">Nghệ thuật</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><span href="">Khóa học <i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-course">
+                            <li class="sub-menu-item"><a href="#">C++</a></li>
+                            <li class="sub-menu-item"><a href="#">C#</a></li>
+                            <li class="sub-menu-item"><a href="#">Website</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><span href="">Chương trình <i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-program">
+                            <li class="sub-menu-item"><a href="#">Tri ân</a></li>
+                            <li class="sub-menu-item"><a href="#">Khuyến học</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><span href="">Sự kiện <i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-event">
+                            <li class="sub-menu-item"><a href="#">Sinh nhật</a></li>
+                            <li class="sub-menu-item"><a href="#">Chào mừng</a></li>
+                            <li class="sub-menu-item"><a href="#">Chào hè</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><span href="">Liên hệ <i class="fas fa-angle-down"></i></span>
+                        <ul class="sub-menu list-contact">
+                            <li class="sub-menu-item"><a href="#">Email</a></li>
+                            <li class="sub-menu-item"><a href="#">Fanpage</a></li>
+                            <li class="sub-menu-item"><a href="#">Hotline</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="login d-flex align-items-center" href="#">Đăng nhập</a>
+                <!-- --Main Menu-- -->
             </div>
-            <!-- --Logo-- -->
-
-            <ul id="main-menu">
-                <li class="menu-item"><a href="../../">Trang chủ</a></li>
-                <li class="menu-item"><a href="">Hoạt động</a></li>
-                <li class="menu-item"><a href="">Khóa học</a></li>
-                <li class="menu-item"><a href="">Chương trình</a></li>
-                <li class="menu-item"><a href="">Sự kiện</a></li>
-                <li class="menu-item"><a href="">Liên hệ</a></li>
-                <li class="menu-item"><a href="">Đăng nhập</a></li>
-            </ul>
-            <!-- --Main Menu-- -->
         </div>
         <!-- ===END HEADER=== -->
 
@@ -53,50 +84,54 @@
                         <img src="./draw2.webp" width="500px" alt="" class="disable-user-selection">
                     </div>
                     <div class="col">
-                        <div class="d-flex flex-column px-5 login">
+                        <div id="section-login" class="d-flex flex-column px-5 login">
                             <h4 class="my-4 text-center">Đăng nhập</h4>
                             <form id="login-form" class="input-form" action="">
                                 <div class="">
                                     <div class="position-relative input-box mb-4">
-                                        <input type="text" name="email" id="email" class="form-control" required>
-                                        <label class="form-control">Email</label>
+                                        <input type="text" name="email" id="email" placeholder=" " class="form-control" required>
+                                        <label class="form-control label-name">Email</label>
                                     </div>
                                     <div class="position-relative input-box mb-4">
                                         <input type="password" name="password" id="password" class="form-control" required>
-                                        <label class="form-control">Mật khẩu</label>
+                                        <label class="form-control label-name">Mật khẩu</label>
                                     </div>
                                     <div class="position-relative d-flex justify-content-between">
                                         <input type="button" id="login-btn" class="btn btn-success ml-2" value="Đăng nhập">
                                         <div class="d-flex align-items-center">
-                                            <a id="" class="badge badge-light badge-link" href="#"><u>Đăng ký</u></a><span class="badge">hoặc</span><a id="" class="badge badge-light badge-link" href="#"><u>Quên mật khẩu?</u></a>
+                                            <a id="ToRegisterForm" class="badge badge-light badge-link" href="#"><u>Đăng ký</u></a><span class="badge">hoặc</span><a id="" class="badge badge-light badge-link" href="#"><u>Quên mật khẩu?</u></a>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="d-flex flex-column px-5 register">
+                        <div id="section-register" class="d-none flex-column px-5 register">
                             <h4 class="my-4 text-center">Đăng ký</h4>
-                            <form id="register-form " class="input-form" action="">
-                                <div class="">
-                                    <div class="position-relative input-box mb-4">
-                                        <input type="text" name="email" id="email" class="form-control" required>
-                                        <label class="form-control">Email</label>
-                                    </div>
-                                    <div class="position-relative input-box mb-4">
-                                        <input type="password" name="password" id="password" class="form-control" required>
-                                        <label class="form-control">Mật khẩu</label>
-                                    </div>
-                                    <div class="position-relative input-box mb-4">
-                                        <input type="password" name="confirm-password" id="confirm-password" class="form-control" required>
-                                        <label class="form-control">Nhập lại mật khẩu</label>
-                                    </div>
-                                    <div class="position-relative d-flex justify-content-between">
-                                        <input type="button" id="registerbtn" class="btn btn-success ml-2" value="Đăng ký">
-                                        <div class="d-flex align-items-center">
-                                            <span class="badge">Đã có tài khoản?</span><a id="" class="badge badge-light badge-link" href="#"><u>Đăng nhập!</u></a>
+                            <form id="register-form" class="input-form" action="">
+                                <fieldset>
+                                    <div class="">
+                                        <div class="position-relative input-box mb-4">
+                                            <input type="email" name="r-email" id="r-email" placeholder=" " class="form-control" required>
+                                            <label class="form-control label-name">Email</label>
+                                        </div>
+                                        <div class="position-relative input-box mb-4">
+                                            <input type="password" name="r-password" id="r-password" class="form-control" required>
+                                            <label class="form-control label-name">Mật khẩu</label>
+                                            <label for="r-passowrd" id="passcheck" class="errormessage">**vui lòng nhập trường này!</label>
+                                        </div>
+                                        <div class="position-relative input-box mb-4">
+                                            <input type="password" name="re-password" id="re-r-password" class="form-control" required>
+                                            <label class="form-control label-name">Nhập lại mật khẩu</label>
+                                            <label for="re-r-passowrd" id="conpasscheck"class="errormessage">**vui lòng nhập trường này!</label>
+                                        </div>
+                                        <div class="position-relative d-flex justify-content-between">
+                                            <input type="button" id="registerbtn" class="btn btn-success ml-2" value="Đăng ký">
+                                            <div class="d-flex align-items-center">
+                                                <span class="badge">Đã có tài khoản?</span><a id="ToLoginForm" class="badge badge-light badge-link" href="#"><u>Đăng nhập!</u></a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </fieldset>
                             </form>
                         </div>
                     </div>
@@ -108,8 +143,9 @@
     <script src="../../assets/js/less.js"></script>
     <script src="../../assets/js/popper.min.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../aassets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="../../assets/js/main.js"></script>
-    <script src="./assets/js/validate.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
