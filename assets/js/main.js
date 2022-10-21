@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $(".carousel").carousel({
         interval: 2500,
+
     });
 
     $(".slick-slider").slick({
@@ -83,4 +84,5 @@ $(document).ready(function(){
             "background-color": "transparent"
         });
     });
+    
 });
