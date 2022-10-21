@@ -1,10 +1,10 @@
 $(".slick-slider").slick({
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     dots: false,
     arrows: false,
-    infinite: false,
-    vertical: true,
+    infinite: true,
+    horizontal: true,
     draggable: true,
     speed: 300,
     autoplaySpeed: 1500,
