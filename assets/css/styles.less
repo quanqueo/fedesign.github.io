@@ -346,6 +346,7 @@ span#backtop {
         height: 26rem;
 
         .content-description {
+
           font-style: italic;
           color: @--light-dark;
           text-align: justify;
@@ -416,6 +417,12 @@ span#backtop {
       position: relative;
 
       box-shadow: 0 3px 2px #00000020;
+
+      &:hover {
+        .title {
+          color: #007bff !important;
+        }
+      }
 
       &:has(.flex-row-reverse) {
 
@@ -531,9 +538,12 @@ span#backtop {
 
           .title {
             color: @--light-dark;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
           }
 
           >p {
+            font-size: .8rem;
             font-style: italic;
             color: var(--secondary);
           }
