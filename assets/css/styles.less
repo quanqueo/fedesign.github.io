@@ -268,13 +268,8 @@ span#backtop {
 
 
 
-
 #courses {
-  border-left: 10px solid rgb(3, 121, 161);
-  padding-bottom: 30px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  transition: 0.4s;
+  margin-top: 150px;
   ul.nav {
     justify-content: right;
     position: relative;
@@ -367,6 +362,129 @@ span#backtop {
     }
     li:hover a.tab-item-img img{
         transform: scale(1.04);
+    }
+  }
+}
+
+#contest{
+  .container{
+    .carousel-wrapper {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .carousel {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    
+    .slider {
+      display: flex;
+      width: auto;
+      max-width: none;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0;
+      overflow-x: hidden;
+      align-items: stretch;
+      touch-action: pan-x;
+      border-radius: 4px;
+      justify-content: flex-start;
+    }
+    
+    .slider-control {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      background-color: #fff;
+      border: none;
+      border-radius: 999px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      transition: box-shadow 0.12s ease;
+      
+      &.arrow-right {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+      
+      &.arrow-left {
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+      
+      &:not(:disabled) {
+        cursor: pointer;
+        
+        &:hover,
+        &:focus {
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        
+        &:active {
+          background-color: #f1f1f1;
+        }
+      }
+      
+      &:disabled {
+        cursor: not-allowed;
+      }
+      
+      &.hide {
+        display: none;
+      }
+    }
+    
+    .slide {
+      display: inline-flex;
+      min-width: 100%;
+      height: 360px;
+      margin-right: 20px;
+      font-size: 20vw;
+      font-weight: 700;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      border-radius: 8px;
+      background-color: #fff;
+      background-blend-mode: multiply;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      // border: 1px solid #ccc;
+      
+      span {
+        display: block;
+        text-align: center;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        line-height: 1;
+        user-select: none;
+      }
+      
+      &.has-image {
+        color: #fff;
+        
+        span {
+          // -webkit-background-clip: text;
+          // color: transparent;
+          color: #fff;
+        }
+      }
+      
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
