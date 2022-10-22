@@ -269,7 +269,9 @@ span#backtop {
 
 
 #courses {
-  margin-top: 150px;
+  margin-top: 60px;
+  border-left: 10px solid rgb(3, 121, 161);
+  padding-bottom: 40px;
   ul.nav {
     justify-content: right;
     position: relative;
@@ -292,7 +294,7 @@ span#backtop {
 
       span.highlight{
         position: relative;
-        
+        color: #0b226e;
       }
       span.highlight::before{
         content: "";
@@ -367,7 +369,33 @@ span#backtop {
 }
 
 #contest{
+  margin-top: 50px;
+  position: relative;
+  padding-bottom: 50px;
+  p{
+    span{
+      color: #0b226e;
+      
+    }
+    span::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2%;
+      background-color: rgb(3, 121, 161);
+      top: 50%;
+      left: 0;
+    }
+  }
   .container{
+    .col-md-4{
+      transition: 0.4s;
+    }
+    .col-md-4:hover{
+      box-shadow: 0px 0px 10px rgb(171, 167, 167);
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
     .carousel-wrapper {
       display: block;
       width: 100%;
