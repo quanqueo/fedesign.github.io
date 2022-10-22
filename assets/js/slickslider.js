@@ -3,11 +3,11 @@ $(".slick-slider").slick({
     autoplay: true,
     dots: false,
     arrows: false,
-    infinite: false,
-    vertical: true,
+    infinite: true,
+    horizontal: true,
     draggable: true,
     speed: 300,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 4000,
 });
 
 $(".slick-slider").on("wheel", function (e) {
