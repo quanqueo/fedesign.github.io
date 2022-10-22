@@ -53,7 +53,7 @@ span#backtop {
   position: fixed;
   bottom: 8%;
   right: 3%;
-  background-color: #007bff;
+  background-color: #03669b;
 
   i {
     display: block;
@@ -206,12 +206,13 @@ span#backtop {
 #featured-members {
   height: auto;
   background-color: white;
-
+  
   ul.featuredMem-menu {
     padding: 0px;
     display: inline-block;
     flex-direction: row;
     height: auto;
+   
 
     li {
       height: auto;
@@ -269,7 +270,11 @@ span#backtop {
 
 
 #courses {
-  margin-top: 150px;
+  border-left: 10px solid rgb(3, 121, 161);
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  transition: 0.4s;
   ul.nav {
     justify-content: right;
     position: relative;
@@ -301,8 +306,8 @@ span#backtop {
         right: 0px;
         opacity: 0.3;
         width: 100%;
-        height: 30%;
-        background-color: #007bff;
+        height: 20%;
+        background-color: rgb(3, 121, 161);
         display: block;
       }
     }
@@ -310,10 +315,16 @@ span#backtop {
 
   ul#tab-course-cpp {
     padding: 0px;
+    justify-content: center;
+
+    .row{
+      justify-content: center;
+    }
     li {
       height: auto;
       overflow: hidden;
       padding-top: 20px;
+      transition: 0.4s;
 
       a.learnMore {
         font-size: 13px;
@@ -331,18 +342,16 @@ span#backtop {
           transition: 0.4s;
           transform: scale(1);
           margin-bottom: 20px;
-          height: 180px;
-        }
-
-        img:hover {
-          transform: scale(1.04);
+          height: 160px;
+          width: 100%;
         }
       }
 
       span.title-course {
-        font-size: 28px;
+        font-size: 24px;
         margin: 20px 0px 0px 0px;
         font-weight: bold;
+        color:rgba(4, 13, 146, 0.838);
       }
 
       .info-course {
@@ -352,11 +361,19 @@ span#backtop {
         display: flex;
         color: black;
       }
+      &:hover{
+        box-shadow: 0px 0px 15px rgb(185, 180, 180);
+      }
+    }
+    li:hover a.tab-item-img img{
+        transform: scale(1.04);
     }
   }
 }
 
 #activities {
+  margin-bottom: 150px;
+  border-right: 10px solid rgb(3, 121, 161);
   .activities-lists-item {
     background-image: url("../images/img-activities/bg/dawn.png");
     background-size: cover;
@@ -501,6 +518,7 @@ span#backtop {
 }
 
 #highlight {
+  margin-top: 30px;
   .highlight-list {
 
     .highlight-item {
